@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        *{
+            font-weight: bold;
+            font-family: cursive;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('image/3.jpg');
+            background-size: cover;
+            
+        }
+        .left{
+            /* border: 2px solid red; */
+            width: 10%;
+            display: inline-block;
+            position: absolute;
+            left: 5px;
+            text-align:center;
+            /* background-color: #a5b4cc; */
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid green; */
+            width: 37%;
+            margin: 20px auto;
+        }
+        .right{
+            position: absolute;
+            /* border: 2px solid blue; */
+            /* float: right; */
+            right: 0px;
+            width: 18%;
+            top: 20px;
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 24px;
+        }
+        .navbar li a{
+            color: black;
+            text-decoration: none;
+            padding: 21px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: rgba(124, 124, 124, 0.879);
+            /* background: transparent; */
+            border-radius: 10px;
+            border: none;
+        }
+        .btn{
+            margin: 0px 20px;
+            padding: 8px 11px;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            /* border: 2px solid rgb(163, 161, 161); */
+            border: none;
+        }
+        .btn:hover
+        {
+            background: rgba(191, 191, 191, 0.879);
+            border: 1px solid grey;
+        }
+        .btn a{
+            color: black;
+            text-decoration: none;
+        }
+        .btn a:hover{
+            text-decoration: underline;
+            color: rgba(0, 0, 0, 0.879);
+        }
+        .menubtn{
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            background: transparent;
+            padding: 10px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .menubtn:hover{
+            background: rgba(191, 191, 191, 0.879);
+        }
+        .menubtn:active{
+            background: rgb(156, 156, 156);
+        }
+        .navbar li a.active{
+            color: rgba(191, 191, 191, 0.879);
+        }
+        .left img{
+            height: 70px;
+            width: 70px;
+        }
+        .content{
+            /* border: 2px solid grey; */
+            display: block;
+            width: 33%;
+            margin: 90px 185px;
+            padding: 20px 20px;
+            border-radius: 8px;
+            text-decoration: underline;
+        }
+        .formgroup input{
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            padding: 2px;
+            width: 367px;
+            border: 0px;
+            border-radius: 0px;
+            margin: 11px auto;
+            background-color: transparent;
+            /* cursor: pointer; */
+            resize: none;
+            outline: none;
+            font-weight: bold;
+        }
+        .content h1{
+            text-align: center;
+        }
+        .content button{
+            display: block;
+            margin: auto;
+        }
+        #name{
+            width: 0px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header class="navigation">
+    <div class="left" id="logo">
+        <a href="#"><img src="image/4.png" alt=""></a>
+        <div>Gym N Fitness</div>
+    </div>
+    <div class="mid" id="menu">
+        <ul class="navbar">
+            <li><a href="#" class="active"><button class="menubtn">Home</button></a></li>
+            <li><a href="#services"><button class="menubtn">Services</button></a></li>
+            <li><a href="#facilities"><button class="menubtn">Facilities</button></a></li>
+            <li><a href="#aboutus"><button class="menubtn">About Us</button></a></li>
+        </ul>
+    
+    </div>
+    <div class="right" id="contacts">
+        <button class="btn"><a href="#call">Call Us Now</a></button>
+        <button class="btn"><a href="#email">Email Us</a></button>
+    </div>
+    </header>
+    <div class="content">
+        <h1>It's never too late</h1>
+        <form action="noaction.php">
+            <div class="formgroup" id="name">
+                <input type="text"  class="entry" placeholder="First Name">
+                <input type="text" class="entry" placeholder="Last Name">
+            </div>
+            <div class="formgroup">
+                <input type="number" class="entry" placeholder="Enter Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" class="entry" placeholder="Enter Address">
+            </div>
+            <div class="formgroup">
+                <input type="number" class="entry" placeholder="Enter Contact">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
